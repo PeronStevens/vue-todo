@@ -15,6 +15,8 @@ export default {
     methods: {
         createTodo() {
             this.$emit('createTodo', this.inputData);
+
+            this.inputData = '';
         }
     }
 }
